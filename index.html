@@ -15,19 +15,37 @@
         <form id="formulario">
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" value="" required autofocus>
+                <input type="text" name="nombre" id="nombre" value="" required autofocus>
             </div>
             <div>
                 <label for="correo">Correo:</label>
-                <input type="email" id="correo" value="" required placeholder="email@email">
+                <input type="email" name="correo" id="correo" value="" required placeholder="email@email">
             </div>
             <div>
                 <label for="tel">Telefono:</label>
-                <input type="tel" id="tel" value="">
+                <input type="tel" name="tel" id="tel" value="">
             </div>
             <div>
                 <label for="edad">Edad:</label>
-                <input type="number" min="18" id="edad" value="">
+                <input type="number" name="edad" min="18" id="edad" value="">
+            </div>
+            <div>
+                ¿ESTOY BIEN INFORMADO/A?:<br>
+                <label for="buscar">He buscado información sobre las posibles opciones de formación que tengo a mi alcance</label><br>
+                <input type="radio" value="si" name="buscar" required>Si<br>
+                <input type="radio" value="no" name="buscar">No<br>
+            </div>
+            <div>
+                <label for="optativas">Las optativas que he elegido este curso son las adecuadas para los estudios que quiero hacer el próximo curso</label><br>
+                <input type="radio" value="si" name="optativas" required>Si<br>
+                <input type="radio" value="no" name="optativas" required>No<br>
+            </div>
+            <div required>
+                <label for="personalidad">CÓMO SOY, QUÉ HABILIDADES TENGO, EN QUÉ DESTACO: (ELIGE 3):</label><br>
+                <input type="checkbox" name="personalidad"  value="creativo">Creaivo, imaginativo<br>
+                <input type="checkbox" name="personalidad" value="humanitario">Humanitario, pacientente<br>
+                <input type="checkbox" name="personalidad" value="habilidoso">Habilidoso en las tareas manuales<br>
+                <input type="checkbox" name="personalidad" value="web">Capaz de diseñar una web o hacer programas sencillos<br>
             </div>
             <button id="enviar">Enviar!</button>
         </form>
